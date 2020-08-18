@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Hydria_Calculator.TrackingPage"
+             BackgroundColor="#e0f7fa"
+             NavigationPage.HasBackButton="False"
+             >
+
+    <ListView x:Name="actionsListView"
+              ItemSelected="actionsListView_ItemSelected"
+              HeightRequest="1700">
+        <ListView.Header>
+            <StackLayout x:Name="funHeaderStackLayout"
+                         Margin="20, 20, 20, 20">
+                <Button Text="Add an Action"
+                        TextColor="White"
+                        BackgroundColor="DodgerBlue"
+                        Clicked="addBtn_Clicked"
+                        VerticalOptions="Start"/>               
+                <Label Text="Your Actions Today"
+                       FontFamily="Quicksand-Regular"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    TextColor="DodgerBlue"   
+                    FontSize="Large"
+                    FontAttributes="Bold"  
+                    />
+            </StackLayout>
+        </ListView.Header>
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout Orientation="Horizontal"
+                                 BackgroundColor="White">
+                        <Label Text="{Binding ActionType}"
+                                FontSize="Large"
+                               HorizontalOptions="Start"
+                               TextColor="DodgerBlue"/>
+                        <Label Text="+"
+                               FontSize="Large"
+                               HorizontalOptions="End"
+                               TextColor="DodgerBlue"/>
+                        <Label Text="{Binding Points}"
+                               FontSize="Large"
+                               HorizontalOptions="End"
+                               TextColor="DodgerBlue"/>
+                        <Label Text="{Binding Note}"
+                                Style="{StaticResource aStyle}"
+                                HorizontalOptions="Start"/>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+        <ListView.Footer>
+            <StackLayout x:Name="funFooterStackLayout">
+                <Label Text=""/>
+                <Label Text="Your Plastic Score"
+                       FontFamily="Quicksand-Regular"
+                    TextColor="DodgerBlue"
+                    FontSize="Large"
+                    FontAttributes="Bold"       
+                    HorizontalOptions="Center"/>                
+            </StackLayout>
+        </ListView.Footer>  
+        
+       
+    </ListView>
+   
+</ContentPage>

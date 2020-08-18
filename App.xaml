@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Hydria_Calculator.App">
+    <Application.Resources>
+        <Style x:Key="aStyle"
+               TargetType="Label">
+            <Setter Property="TextColor" Value="DodgerBlue"/>
+             <Setter Property="FontSize" Value="Body"/>            
+        </Style>
+        <Style x:Key="bStyle"
+               TargetType="Label">
+            <Setter Property="TextColor" Value="DodgerBlue"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+            <Setter Property="FontSize" Value="Large"/>
+            <Setter Property="FontFamily" Value="Quicksand"/>
+        </Style>
+
+    </Application.Resources>
+</Application>

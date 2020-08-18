@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Hydria_Calculator.ResourcesPage"
+             BackgroundColor="#e0f7fa">
+    <ContentPage.Content>
+      <ScrollView>
+            
+        <StackLayout Margin="20, 20, 20, 20">
+            <Label Text="Why Should I Use Less Plastic?"
+                   Style="{StaticResource bStyle}"
+                   HorizontalTextAlignment="Center"/>
+           
+            <Label Text="Hundreds of millions of tons of plastic enter the ocean every year. It's so much that scientists estimate that by 2050, there will be more plastic than fish in the ocean by weight. Single-use plastic enters the ocean and breaks down into tiny pieces called microplastics. These are consumed by organisms and make their way up the food chain, where they accumulate in the bodies of top predators like whales--and humans--with unknown side effects. You can help stem the flow of single-use plastic into our ocean by following the 3 R's: Reduce, Reuse, and Recycle."
+                   Style="{StaticResource aStyle}"
+                   HorizontalTextAlignment="Center"/>
+           
+             <Label HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="For more info, visit Hydria's Instagram page " 
+                                  TextColor="DodgerBlue"/>
+                            <Span Text="@hydria_app"
+                            TextColor="DodgerBlue"
+                            TextDecorations="Underline">
+                                <Span.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding ClickCommand}"
+                                          CommandParameter="https://www.instagram.com/hydria_app/" />
+                                </Span.GestureRecognizers>
+                            </Span>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+             <Label Text="Why Does Reducing Get Me More Points Than Recycling?"
+                   Style="{StaticResource bStyle}"
+                   HorizontalTextAlignment="Center"/>
+             <Label Text="You should reduce, reuse, and recycle in that order. Reducing consumption is even better for the planet than reusing and recycling. Reusing is good, but it means you've already bought something in the first place. Recycling is also a good practice, but the truth is, only around 9% of plastic produced has been recycled. Also, a lot of the plastic products we use aren't even recyclable, even though we may think they are. That's why recycling isn't a good solution on its own."
+                   Style="{StaticResource aStyle}"
+                   HorizontalTextAlignment="Center"/>
+            <Label Text="Why Is My Coral White?"
+                   Style="{StaticResource bStyle}"
+                   HorizontalTextAlignment="Center"/>
+            <Label Text="Corals undergo stress, especially stress caused by rising ocean temperatures due to global warming. When pollutants enter their environment, they are more likely to get 'sick' if they are already in stressful conditions."
+                   Style="{StaticResource aStyle}"/>
+                <Label Text="Why are sick corals white? It's because corals get their color from tiny algae living inside their tissues. Once the coral undergoes stress, it 'bleaches,' or expels this algae. This negatively impacts the coral's health, because the algae provide food to the coral by photosynthesizing. If conditions continue to be stressful and the coral keeps algae out, the coral will die."
+                Style="{StaticResource aStyle}"
+                HorizontalTextAlignment="Center"/>
+             <Label Text="Alternative Products"
+                   Style="{StaticResource bStyle}"
+                   HorizontalTextAlignment="Center"/>
+            <Label Text="zerowastecartel.com"
+                   Style="{StaticResource aStyle}"/>
+            <Label Text="packagefreeshop.com"
+                   Style="{StaticResource aStyle}"/>
+            <Label Text="lushusa.com (USA only)"
+                   Style="{StaticResource aStyle}"/>
+            <Label Text="aardvarkstraws.com"
+                   Style="{StaticResource aStyle}"/>
+            <Label Text="Organizations to Follow"
+                   Style="{StaticResource bStyle}"
+                   HorizontalTextAlignment="Center"/>
+            <Label Text="5gyres.org"
+                   Style="{StaticResource aStyle}"/>
+            <Label Text="plasticpollutioncoalition.org"
+                   Style="{StaticResource aStyle}"/>
+            <Label Text="4ocean.com"
+                   Style="{StaticResource aStyle}"/>
+            <Label Text=""
+                   Style="{StaticResource aStyle}"/>
+        </StackLayout>
+      </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

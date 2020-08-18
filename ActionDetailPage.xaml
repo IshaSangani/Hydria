@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Hydria_Calculator.ActionDetailPage"
+             BackgroundColor="#e0f7fa">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button x:Name="actionTypeBtn"
+                    Text="Edit action type"
+                    TextColor="White"
+                    BackgroundColor="DodgerBlue"
+                    Clicked="actionTypeBtn_Clicked"/>
+            <Button x:Name="detailsBtn"
+                    Text="Edit details"
+                    TextColor="White"
+                    BackgroundColor="DodgerBlue"
+                    Clicked="detailsBtn_Clicked"/>
+            <Button x:Name="deleteBtn"
+                    Text="Delete"
+                    TextColor="White"
+                    BackgroundColor="DodgerBlue"
+                    Clicked="deleteBtn_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
