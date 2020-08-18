@@ -5,3 +5,4 @@ Users can see their progress over time in the "Progress" page.
 Finally, Hydria also educates users about plastic pollution and sustainable living. 
 The initial Android version (called Sponge) is out on Google Play. 
 The second version (called Cnidarian) will be out soon.  
+Created by Isha Sangani
